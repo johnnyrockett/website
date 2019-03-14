@@ -18,27 +18,30 @@ $mq-mobile-landscape	: 480px !default;
         width: 45%;
         margin: 1.5%;
     }
+    .page-header {
+        background-size: 200% 200%;
+    }
 }
 
 @-webkit-keyframes BannerGradient {
-    0%{background-position:0% 78%}
-    50%{background-position:100% 23%}
-    100%{background-position:0% 78%}
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
 }
 @-moz-keyframes BannerGradient {
-    0%{background-position:0% 78%}
-    50%{background-position:100% 23%}
-    100%{background-position:0% 78%}
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
 }
 @keyframes BannerGradient {
-    0%{background-position:0% 78%}
-    50%{background-position:100% 23%}
-    100%{background-position:0% 78%}
+    0%{background-position:0% 2%}
+    50%{background-position:100% 99%}
+    100%{background-position:0% 2%}
 }
 
 .page-header { color: #fff; text-align: center; background-color: #159957;
     background: linear-gradient(323deg, #159957, #155799, #cd2c2c);
-    background-size: 600% 600%;
+    background-size: 200% 200%;
 
     -webkit-animation: BannerGradient 11s ease infinite;
     -moz-animation: BannerGradient 11s ease infinite;
