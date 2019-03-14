@@ -20,6 +20,34 @@ $mq-mobile-landscape	: 480px !default;
     }
 }
 
+@-webkit-keyframes BannerGradient {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@-moz-keyframes BannerGradient {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+@keyframes BannerGradient {
+    0%{background-position:0% 78%}
+    50%{background-position:100% 23%}
+    100%{background-position:0% 78%}
+}
+
+.page-header { color: #fff; text-align: center; background-color: #159957;
+    background: linear-gradient(323deg, #159957, #155799, #cd2c2c);
+    background-size: 600% 600%;
+
+    -webkit-animation: BannerGradient 11s ease infinite;
+    -moz-animation: BannerGradient 11s ease infinite;
+    animation: BannerGradient 11s ease infinite;
+}
+@media screen and (min-width: 64em) { .page-header { padding: 5rem 6rem; } }
+@media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 3rem 4rem; } }
+@media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
+
 body {
     background-color: #2a2e31;
     // background-color: #1d222b;
