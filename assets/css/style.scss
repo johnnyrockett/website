@@ -52,7 +52,7 @@ $mq-mobile-landscape	: 480px !default;
 @media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
 
 .row {
-    display: flex;
+    display: inline-flex;
 }
 
 .container {
@@ -73,20 +73,12 @@ $mq-mobile-landscape	: 480px !default;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-.vCenter {
-    text-align:center;
-    height: 100%;
-    line-height: 100%;
-}
-
 body {
     background-color: #2a2e31;
     // background-color: #1d222b;
     color: #FFFFFF;
-
 }
 
-img {
-    width: 25vw;
-    height: 25vw;
-}
+// img {
+//     display:inline-block;
+// }
