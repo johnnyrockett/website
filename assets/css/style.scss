@@ -51,6 +51,34 @@ $mq-mobile-landscape	: 480px !default;
 @media screen and (min-width: 42em) and (max-width: 64em) { .page-header { padding: 3rem 4rem; } }
 @media screen and (max-width: 42em) { .page-header { padding: 2rem 1rem; } }
 
+.row {
+    display:flex;
+    padding: 10px 10px;
+}
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    background-color: #353b3f;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+
+.vCenter {
+    text-align:center;
+    height: 100%;
+    line-height: 100%;
+}
+
 body {
     background-color: #2a2e31;
     // background-color: #1d222b;
