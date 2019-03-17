@@ -53,11 +53,11 @@ $mq-mobile-landscape	: 480px !default;
 
 .row {
     display: inline-flex;
+    text-align: justify;
 }
 
 .container {
     display: inline-block;
-    height: 30%;
     padding: 10px 10px;
 }
 
@@ -80,6 +80,12 @@ body {
     color: #FFFFFF;
 }
 
-// img {
-//     display:inline-block;
+#dynamicheight
+{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+}
+// .unitImg {
+//     // width: 30%;
 // }

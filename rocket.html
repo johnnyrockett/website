@@ -12,16 +12,31 @@
   </head>
   <body>
 
+    <script>
+        $(function() {
+            var div = $('#dynamicheight');
+            var width = div.width();
+
+            div.css('height', width);
+        });
+    </script>
+
     <main id="content" class="main-content" role="main">
       <p>Check out the rocket I made</p>
       <div class="card">
           <div class="container">
             <div class="row" >
-                <img width=30% src="/images/rocket.gif">
+                <div id="dynamicheight">
+                    <img width=30% src="/images/rocket.gif">
+                </div>
                 <p> + </p>
-                <img width=30% src="/images/fire.gif">
+                <div id="dynamicheight">
+                    <img width=30% src="/images/fire.gif">
+                </div>
                 <p> = </p>
-                <img width=30% src="/images/rocketPixelFire.gif">
+                <div id="dynamicheight">
+                    <img width=30% src="/images/rocketPixelFire.gif">
+                </div>
             </div>
         </div>
       </div>
