@@ -19,13 +19,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
-    <link rel="icon" href="/images/rocket.png">
+    <link rel="icon" href="/assets/images/rocket.png">
   </head>
   <body>
 
     <header class="page-header" role="banner">
         <a href="./rocket.html">
-            <img width=10% src="/images/rocketPixelFire.gif" >
+            <img width=10% src="/assets/images/rocketPixelFire.gif" >
         </a>
         <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
         <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
@@ -34,7 +34,34 @@
     </header>
 
     <main id="content" class="main-content" role="main">
-      {{ content }}
+      <!-- {{ content }} -->
+      <div class="card">
+        <div class="container">
+            <div class="zoom">
+                <a href="./showcases/EscapeRussia/index.html">
+                    <h1>Ray Tracing</h1>
+                </a>
+            </div>
+            <div id="dynamicheight">
+                <img width=100% src="/assets/images/RayTracing.gif">
+            </div>
+            <p>After learning about ray tracing, I implemented a 2D version of it in PixiJS because I thought that it would make a good stealth mechanic. In the game, the player can hide from enemies in realistic ways because the field of view of the enemies is ray traced for accuracy. I allowed for arbitrary objects to obscure the enemy's vision by using a similar format to .obj files. Feel free to play these levels or make your own.</p>
+        </div>
+        </div>
+
+        <div class="card">
+            <div class="container">
+                <div class="zoom">
+                    <a href="./showcases/csc562-final/src/index.html">
+                        <h1>Infinite Fractal Terrain</h1>
+                    </a>
+                </div>
+                <div id="dynamicheight">
+                    <img width=100% src="/assets/images/FractalTerrain.png">
+                </div>
+                <p>As the final project for my Game Engines class, my group made a 3D, infinite, fractally generated environment. It has LOD to make sure it doesn't strain the graphics card too much. Go ahead and walk around! Hit "G" to toggle between flying and walking and hit "F" to toggle your flashlight. In the project, I mostly worked on making the trees generate using fractals, not generate on each other, and generate at different distances from the player based on the tree's size. </p>
+            </div>
+        </div>
 
       <footer class="site-footer">
         {% if site.github.is_project_page %}

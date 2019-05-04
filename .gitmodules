@@ -1,0 +1,6 @@
+[submodule "showcases/EscapeRussia"]
+	path = showcases/EscapeRussia
+	url = https://github.com/johnnyrockett/EscapeRussia.git
+[submodule "showcases/csc562-final"]
+	path = showcases/csc562-final
+	url = https://github.ncsu.edu/camoore7/csc562-final.git

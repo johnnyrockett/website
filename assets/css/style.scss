@@ -5,6 +5,8 @@
 
 $mq-mobile-landscape	: 480px !default;
 
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: bold; color: #efefef; }
+
 // Both portrait and landscape
 @mixin mobile-only {
 	@media (max-width : $mq-mobile-landscape) {
@@ -90,3 +92,12 @@ body {
 // .unitImg {
 //     // width: 30%;
 // }
+
+// for images growing on hover
+.zoom {
+    transition: transform .2s; /* Animation */
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
